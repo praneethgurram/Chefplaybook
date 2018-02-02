@@ -15,6 +15,15 @@ file '/var/www/html/index.html' do
 	owner 'praneeth'
 end
 
+file '/home/praneeth/Builds/Chefplaybook/test.html' do
+	content 'created in chefplaybook dir'
+	
+end
+
+
+
+ 
+
 	
 
 
