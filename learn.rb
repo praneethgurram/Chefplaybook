@@ -20,7 +20,12 @@ file '/home/praneeth/Builds/Chefplaybook/test.html' do
 	
 end
 
+execute 'command-test' do
 
+	command 'echo blah >> /home/praneeth/Builds/Chefplaybook/test.html'
+	only_if 'test -r /home/praneeth/Builds/Chefplaybook/test.html'
+
+end
 
  
 
