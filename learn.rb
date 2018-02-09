@@ -15,15 +15,15 @@ file '/var/www/html/index.html' do
 	owner 'praneeth'
 end
 
-file '/home/praneeth/Builds/Chefplaybook/test.html' do
+file '/home/praneeth/Devops/Chefplaybook/test.html' do
 	content 'created in chefplaybook dir'
 	
 end
 
 execute 'command-test' do
 
-	command 'echo blah >> /home/praneeth/Builds/Chefplaybook/test.html'
-	only_if 'test -r /home/praneeth/Builds/Chefplaybook/test.html'
+	command 'echo blah >> /home/praneeth/Devops/Chefplaybook/test.html'
+	only_if 'test -r /home/praneeth/Devops/Chefplaybook/test.html'
 
 end
 
